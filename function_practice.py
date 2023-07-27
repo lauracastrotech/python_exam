@@ -55,4 +55,6 @@ def day_of_year(year, month, day):
 
 #Test Case 1
 print(day_of_year(2000, 12, 31))
+
+#Test Case 2
 print(day_of_year(1989, 1, 12))
