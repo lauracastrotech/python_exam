@@ -1,0 +1,37 @@
+"""
+Programmer: L Castro
+Date: July 26, 2023
+Purpose: The code below is Lab 4.3.1.9
+"""
+
+def is_prime(number):
+    # Function that checks if a number is prime
+    
+    # Check if the number is greater than 1
+    if number <= 1:
+        return False
+    
+    # Numbers 2 and 3 are prime numbers and don't need to be checked
+    elif number <= 3:
+        return True
+    
+    # Check numbers that are greater than the number 3
+    elif number > 3:
+        #Check if there are any factors of the number, check to see if the number is divisible by more than just 1 and itself
+        for factor in range(2, number):
+            # The factor is found if the following statement is true
+            if number % factor == 0:
+                # If the code gets to here, it means that the number is NOT prime
+                return False
+            
+        # After the program has gone through the loop, if it gets to this line than it is a prime number
+        return True
+    
+# Test Case 1
+print(is_prime(17))
+
+#Test Case 2
+print(is_prime(3))
+
+#Test Case 3
+print(is_prime(26))
