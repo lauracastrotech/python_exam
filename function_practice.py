@@ -81,3 +81,10 @@ def a_function():
 var = 1
 a_function()
 print(var)
+
+#Here is a simple function evaluating the BMI
+def bmi(weight, height):
+    if (type(weight) is not int and type(weight) is not float) or (type(height) is not int and type(height) is not float):
+        return None
+    return weight / height ** 2
+print(bmi(63.3, 5))
