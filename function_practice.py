@@ -84,7 +84,21 @@ print(var)
 
 #Here is a simple function evaluating the BMI
 def bmi(weight, height):
-    if (type(weight) is not int and type(weight) is not float) or (type(height) is not int and type(height) is not float):
+    if height < 1.0 or height > 2.5 or \
+       weight < 20 or weight > 200:
         return None
+    #Return this if the value is valid
     return weight / height ** 2
+
+#A function to convert pounds to kilograms
+def lb_to_kg(lb):
+    return lb * 0.45359237
+
+#A function to convert feet and inches to meters, uses a default value for inches
+def feet_and_inches_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+
+print(feet_and_inches_to_m(6))
+print(lb_to_kg(1))
 print(bmi(63.3, 5))
+print(bmi(weight = lb_to_kg(176), height=feet_and_inches_to_m(5, 7)))
