@@ -102,3 +102,35 @@ print(feet_and_inches_to_m(6))
 print(lb_to_kg(1))
 print(bmi(63.3, 5))
 print(bmi(weight = lb_to_kg(176), height=feet_and_inches_to_m(5, 7)))
+
+#This is a function that builds a triangle
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+#This function checks if the triangle is a right triangle
+def is_a_right_triangle(a,b,c):
+    if not is_a_triangle(a,b,c):
+        return False
+    if c > a and c > b:
+        return c ** 2 == a ** 2 + b ** 2
+    if a > b and a > c:
+        return a ** 2 == b ** 2 + c ** 2
+    
+#Get the size of the side as input
+a = float(input('Enter the first side\'s length: '))
+b = float(input('Enter the second side\'s length: '))
+c = float(input('Enter the third side\'s length: '))
+
+#Check if it is a triangle
+if is_a_triangle(a,b,c):
+    print("Yes, it can be a triangle.")
+else:
+    print("No, it can\'t be a triangle.")
+
+print(is_a_triangle(5,3,4))
+print(is_a_right_triangle(5, 3, 4))
+
+print(is_a_triangle(1, 3, 4))
+print(is_a_right_triangle(1,3,4))
+
+
