@@ -4,6 +4,7 @@ Date: July 26, 2023
 Purpose: The code below is Lab 4.3.1.6 to Lab 4.3.1.8 in module 4. This is practice
 for writing functions.
 """
+"""
 def is_leap_year(year):
     # Function to determine a leap year
     if year % 4 == 0:
@@ -58,3 +59,25 @@ print(day_of_year(2000, 12, 31))
 
 #Test Case 2
 print(day_of_year(1989, 1, 12))
+
+# Excercise from section summary
+def is_int(data):
+    if type(data) == int:
+        return True
+    elif type(data) == float:
+        return False
+
+print(is_int(5))
+print(is_int(5.0))
+print(type("5"))
+    """
+
+#This is an example of using the global keyword
+def a_function():
+    global var
+    var = 2
+    return print("Is this a var", var)
+
+var = 1
+a_function()
+print(var)
