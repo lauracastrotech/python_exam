@@ -72,6 +72,7 @@ print(is_int(5.0))
 print(type("5"))
     """
 
+"""
 #This is an example of using the global keyword
 def a_function():
     global var
@@ -102,10 +103,21 @@ print(feet_and_inches_to_m(6))
 print(lb_to_kg(1))
 print(bmi(63.3, 5))
 print(bmi(weight = lb_to_kg(176), height=feet_and_inches_to_m(5, 7)))
-
+"""
 #This is a function that builds a triangle
 def is_a_triangle(a, b, c):
     return a + b > c and b + c > a and c + a > b
+
+#This function uses the heron formula to calculate the area of a triangle
+def heron(a,b,c):
+    p = (a+b+c)/2
+    return (p * (p -a ) * (p-b) * (p-c))**0.5
+
+#This function returns the area of a triangle and checks to see that it is a triangle
+def area_of_triangle(a,b,c):
+    if not is_a_triangle:
+        return None
+    return heron(a,b,c)
 
 #This function checks if the triangle is a right triangle
 def is_a_right_triangle(a,b,c):
@@ -121,6 +133,10 @@ a = float(input('Enter the first side\'s length: '))
 b = float(input('Enter the second side\'s length: '))
 c = float(input('Enter the third side\'s length: '))
 
+#Get the area of a triangle using input values
+print(area_of_triangle(a,b,c))
+
+"""
 #Check if it is a triangle
 if is_a_triangle(a,b,c):
     print("Yes, it can be a triangle.")
@@ -132,5 +148,5 @@ print(is_a_right_triangle(5, 3, 4))
 
 print(is_a_triangle(1, 3, 4))
 print(is_a_right_triangle(1,3,4))
-
+"""
 
