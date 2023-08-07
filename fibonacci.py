@@ -10,5 +10,12 @@ def fib(n):
     # if the integer is the number 1 or 2, the fibonacci number is 1
     if n < 3:
         return 1
-
+    
+    # initialize the first two elements, which will be 1
+    element_1 = element_2 = 1
+    
+    # initialize a variable to store the sum of elements 
+    the_sum = 0
+    
+    # starting with the number 3, check every number up to the number + 1
 
