@@ -1,4 +1,4 @@
-# This is a code sample from section 4.5.1.6 Creating functions: Fibonacci numbers
+# This is a code sample from section 4.5.1.6 Creating functions: Fibonacci numbers and recursion
 # Programmer: L Castro
 # Date: 8/7/2023
 
