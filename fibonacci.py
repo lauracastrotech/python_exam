@@ -18,4 +18,12 @@ def fib(n):
     the_sum = 0
     
     # starting with the number 3, check every number up to the number + 1
+    for number in range(3, n + 1):
+        the_sum = element_1 + element_2
+        element_1, element_2 = element_2, the_sum
+    return the_sum
+
+# Test case
+for number in range(1, 10):
+    print(number, "->", fib(number))
 
