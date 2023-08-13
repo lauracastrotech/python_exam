@@ -12,3 +12,12 @@ class A:
             print('YES')
         else: #if anything else take this action
             print('MAYBE')
+            
+a = A() # Assign an instance of the class to a variable
+if print('hi') is None: #if this is True take this action
+    a.f()
+else:
+    print('42')
+
+a.f2 = lambda x: x+1 #assign lambda who value is x and expression is x+1
+print(a.f2(41) in [1,2,42])
