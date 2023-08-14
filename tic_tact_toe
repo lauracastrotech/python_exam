@@ -1,0 +1,12 @@
+# Programmer: Laura Castro
+# Date: August 14, 2023
+# Purpose: Write a tic tac toe program that plays the computer
+
+board = [[1, 2, 3], [4,"X",6], [7,8,9]]
+
+
+
+for row in range(0, 3):
+    for column in range(0,3):
+        print(board[row][column], end = " ")
+    print("")
