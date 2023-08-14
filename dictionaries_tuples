@@ -1,0 +1,61 @@
+# Programmer: Laura Castro
+# Date: 8/14/2023
+# Purpose: This program showcases the use of the following methods: update(), get(), popitem(), items(), dict(), tuple(), keys(), list(), values() count(), sorted(), copy(), clear()
+
+# This is a tuple of names
+names = "laura", "carmen", "castro"
+scores = 56, 86, 94, 73
+
+# This is a dictionary of names and scores
+names_and_scores = {"laura" : 95, "jerry" : 86, "carol": 75}
+
+# Acces a tuple element using an index integer
+print(names[0])
+
+# update()
+names_and_scores.update({"gail": 84, "terri": 89})
+print(names_and_scores)
+
+# get()
+second_name = names_and_scores.get(names[0])
+print(second_name)
+
+# popitem()
+names_and_scores.popitem()
+print(names_and_scores)
+
+# items()
+for key, value in names_and_scores.items():
+    print(key, ">>", value)
+    
+# dict()
+new_names_and_scores = ["paul", 64], ["nick", 81], ["steve", 92]
+print(dict(new_names_and_scores))
+
+# tuple()
+new_scores = [64, 87, 79, 35]
+print(tuple(new_scores))
+
+# keys()
+print(names_and_scores.keys())
+
+# list()
+print(list(new_scores))
+
+# values()
+print(names_and_scores.values())
+
+# count()
+duplicate_tup = "name", "score", "name"
+print(duplicate_tup.count("name"))
+
+# sorted()
+print(sorted(names_and_scores))
+print(sorted(duplicate_tup))
+
+# copy()
+copy_names_and_scores = names_and_scores.copy()
+print(copy_names_and_scores)
+
+# clear()
+print(copy_names_and_scores.clear())
