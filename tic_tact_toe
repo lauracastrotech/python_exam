@@ -2,6 +2,9 @@
 # Date: August 14, 2023
 # Purpose: Write a tic tac toe program that plays the computer. Section 4.7.2.1
 
+# import random module to generate computer moves
+from random import randrange
+
 # Store the squares in the board and update moves here
 board = [[1, 2, 3], [4,"X",6], [7,8,9]]
 
@@ -29,4 +32,5 @@ def make_list_of_free_fields(board):
     for index, column in enumerate(board): # iterate through the board and add the corresponding element from index to free squares list
         free_squares.append(tuple(column)) # convert the column list to a tuple and add it to the free squares list, the computer choose from this
             
-print(free_squares)
+# The function draws the computer's move and updates the board.
+def draw_move(board):
