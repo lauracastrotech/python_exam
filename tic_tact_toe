@@ -6,12 +6,12 @@
 board = [[1, 2, 3], [4,"X",6], [7,8,9]]
 
 # Have a list that stores free squares using a tuple as the element
-free_squares = [(1,2,3), (4,'X',6), (7,8,9)]
+free_squares = []
 
 # This is the control variable until a winner is found
 winner = False
 
-# The function accepts one parameter containing the board's current status and prints it out to the console.
+# This function accepts one parameter containing the board's current status and prints it out to the console.
 def display_board(board):
     for row in range(0,3):
         print("+-------+-------+-------+")
@@ -23,14 +23,10 @@ def display_board(board):
         print(" ")
         print("|       |       |       |")
     print("+-------+-------+-------+")
-    
-display_board(board)
 
-
-
-for row,column in board:
-    for column in range(0,3):
-        if board[row][column] in free_squares:
+# This function browses the board and builds a list of all the free squares; the list consists of tuples, while each tuple is a pair of row and column numbers.
+def make_list_of_free_fields(board):
+    for index, column in enumerate(board): # iterate through the board and add the corresponding element from index to free squares list
+        free_squares.append(tuple(column)) # convert the column list to a tuple and add it to the free squares list, the computer choose from this
             
-
 print(free_squares)
