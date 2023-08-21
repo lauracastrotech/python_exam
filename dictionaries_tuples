@@ -68,12 +68,8 @@ tuple_5 = tuple_3 * 2
 print(tuple_4)
 print(tuple_5)
 
-pol_eng_dict = {
-    "zamek": "castle",
-    "woda":"water",
-    "gleba":"soil"
-}
 
-for item in pol_eng_dict:
-    print(item)
-    print(pol_eng_dict[item])
+
+
+    
+   
