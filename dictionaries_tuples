@@ -14,48 +14,48 @@ print(names[0])
 
 # update()
 names_and_scores.update({"gail": 84, "terri": 89})
-print(names_and_scores)
+print("update()", names_and_scores)
 
 # get()
 second_name = names_and_scores.get(names[0])
-print(second_name)
+print("get()",second_name)
 
 # popitem()
 names_and_scores.popitem()
-print(names_and_scores)
+print("popitem()", names_and_scores)
 
 # items()
 for key, value in names_and_scores.items():
-    print(key, ">>", value)
+    print("key:",key, ">>", "value:", value)
     
 # dict()
 new_names_and_scores = ["paul", 64], ["nick", 81], ["steve", 92]
-print(dict(new_names_and_scores))
+print("dict()",dict(new_names_and_scores))
 
 # tuple()
 new_scores = [64, 87, 79, 35]
-print(tuple(new_scores))
+print("tuple()",tuple(new_scores))
 
 # keys()
-print(names_and_scores.keys())
+print("keys()",names_and_scores.keys())
 
 # list()
-print(list(new_scores))
+print("list()",list(new_scores))
 
 # values()
-print(names_and_scores.values())
+print("values()",names_and_scores.values())
 
 # count()
 duplicate_tup = "name", "score", "name"
-print(duplicate_tup.count("name"))
+print("count()",duplicate_tup.count("name"))
 
 # sorted()
-print(sorted(names_and_scores))
+print("sorted()",sorted(names_and_scores))
 print(sorted(duplicate_tup))
 
 # copy()
 copy_names_and_scores = names_and_scores.copy()
-print(copy_names_and_scores)
+print("copy()", copy_names_and_scores)
 
 # clear()
-print(copy_names_and_scores.clear())
+print("clear()",copy_names_and_scores.clear())
