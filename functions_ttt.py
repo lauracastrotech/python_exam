@@ -14,18 +14,22 @@ def display_board(board):
     print("+-------+-------+-------+")
 
 # The function accepts the board's current status, asks the user about their move, checks the input, and updates the board according to the user's decision.
-def enter_move(board):
+def enter_move(board, free_list):
+    # Get the user's input and validate that it is an integer between 0 and 10 and it cannot point to a field in the free squares list
     user_move = int(input("Enter your move: "))
-    # Write a loop that will match the input with the square and update the element using the index of the number
-    for square in range(0,3):
-        for number in range(0,3):
-            if user_move == board[square][number]:
-                board[square][number] = 'O'
+    if user_move > 0 and user_move < 10 and user_move in free_list:
+        # Write a loop that will match the input with the square and update the element using the # index of the number
+        for square in range(0,3):
+            for number in range(0,3):
+                if user_move == board[square][number]:
+                    board[square][number] = 'O'
+ 
+
 
 # This function browses the board and builds a list of all the free squares; the list consists of tuples, while each tuple is a pair of row and column numbers.
-def make_list_of_free_fields(board):
+def make_list_of_free_fields(board, free_list):
     for index, column in enumerate(board): # iterate through the board and add the corresponding element from index to free squares list
-        free_squares.append(tuple(column)) # convert the column list to a tuple and add it to the free squares list, the computer choose from this
+        free_list.append(tuple(column)) # convert the column list to a tuple and add it to the free squares list, the this list will store integers and strings and the user can only select from the integer elements that represent a free space
 
 # This function returns the value of the sign that is be checked for victory
 def check_sign(letter):

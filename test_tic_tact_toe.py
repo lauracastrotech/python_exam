@@ -8,13 +8,15 @@ from functions_ttt import *
 # and assertFalse to check the results of your functions against expected values
 class TestTicTacToe(unittest.TestCase):
     def test_display_board(self):
-        # Write test cases for the check_game_state function
+        # Write test cases for the function that displays the board
 
     def test_enter_move(self):
-        # Write test cases for the make_move function
+        # Write test cases for the function that accepts input from the 
+        # user
 
     def make_list_of_free_fields(self):
-        # Write test cases for the check_for_win function
+        # Write test cases for the function that adds free fields to a 
+        # list 
 
 if __name__ == '__main__':
      unittest.main()
