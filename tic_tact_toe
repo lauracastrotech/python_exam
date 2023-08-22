@@ -1,6 +1,6 @@
 # Programmer: Laura Castro
 # Date: August 14, 2023
-# Purpose: Write a tic tac toe program that plays the computer. Section 4.7.2.1
+# Purpose: Write a tic tac toe program that plays the computer. 
 
 # import random module to generate computer moves
 import random 
