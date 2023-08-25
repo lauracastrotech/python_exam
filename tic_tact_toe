@@ -85,7 +85,7 @@ while True:
         print("It\'s a tie!")
         break
     draw_move(board)
-    display_board
+    display_board(board)
     if victory_for(board, 'X'):
         print("Computer wins!")
         break
