@@ -10,4 +10,18 @@ from tic_tact_toe import display_board, enter_move, make_list_of_free_fields, vi
 # Create a class that is a subclass to the test case class of the unit test module. Test methods are written in this class.
 class TestTicTactToe(unittest.TestCase):
     
-    # A test method must start with the word test
+    # A test method must start with the word test. Write a test method for each function in the program
+    def test_display_board(self):
+        pass
+  
+    def test_enter_move(self):
+        pass
+    
+    def test_make_list_of_free_fields(self):
+        pass
+    
+    def test_victory_for(self):
+        pass
+    
+    def test_draw_move(self):
+        pass
