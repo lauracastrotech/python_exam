@@ -1,22 +1,13 @@
 # This is a built in module for python
 import unittest 
 
+# This gives access to the random module that is used by the function that draws the computer's move
+import random
+
 # This imports that functions that I want to test
-from functions_ttt import *
+from tic_tact_toe import display_board, enter_move, make_list_of_free_fields, victory_for, draw_move
 
-# Create a test class that inherits from unittest.TestCase. Define methods within this # class to represent different test cases. Use # methods like assertEqual, assertTrue, 
-# and assertFalse to check the results of your functions against expected values
-class TestTicTacToe(unittest.TestCase):
-    def test_display_board(self):
-        # Write test cases for the function that displays the board
-
-    def test_enter_move(self):
-        # Write test cases for the function that accepts input from the 
-        # user
-
-    def make_list_of_free_fields(self):
-        # Write test cases for the function that adds free fields to a 
-        # list 
-
-if __name__ == '__main__':
-     unittest.main()
+# Create a class that is a subclass to the test case class of the unit test module. Test methods are written in this class.
+class TestTicTactToe(unittest.TestCase):
+    
+    # A test method must start with the word test
