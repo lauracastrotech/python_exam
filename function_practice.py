@@ -103,7 +103,7 @@ print(feet_and_inches_to_m(6))
 print(lb_to_kg(1))
 print(bmi(63.3, 5))
 print(bmi(weight = lb_to_kg(176), height=feet_and_inches_to_m(5, 7)))
-"""
+
 #This is a function that builds a triangle
 def is_a_triangle(a, b, c):
     return a + b > c and b + c > a and c + a > b
@@ -136,7 +136,6 @@ c = float(input('Enter the third side\'s length: '))
 #Get the area of a triangle using input values
 print(area_of_triangle(a,b,c))
 
-"""
 #Check if it is a triangle
 if is_a_triangle(a,b,c):
     print("Yes, it can be a triangle.")
@@ -150,3 +149,16 @@ print(is_a_triangle(1, 3, 4))
 print(is_a_right_triangle(1,3,4))
 """
 
+iterate_this_list = [1, 2, 3, 4 ,5]
+for number in iter(iterate_this_list):
+    print(number)
+    
+my_list = ['Mary', 'had', 'a', 'little', 'lamb']
+
+def m_list(my_list):
+    del my_list[3]
+    print(my_list)
+    my_list[3] = 'ram'
+    print(my_list)
+
+print(m_list(my_list))
