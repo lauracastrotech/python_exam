@@ -147,18 +147,13 @@ print(is_a_right_triangle(5, 3, 4))
 
 print(is_a_triangle(1, 3, 4))
 print(is_a_right_triangle(1,3,4))
-"""
+
 
 iterate_this_list = [1, 2, 3, 4 ,5]
 for number in iter(iterate_this_list):
     print(number)
-    
-my_list = ['Mary', 'had', 'a', 'little', 'lamb']
+"""
+lst = [[x for x in range(3)] for y in range(3)]
+print(lst)
 
-def m_list(my_list):
-    del my_list[3]
-    print(my_list)
-    my_list[3] = 'ram'
-    print(my_list)
-
-print(m_list(my_list))
+print("a","b","c",sep="sep")
