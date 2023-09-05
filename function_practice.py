@@ -152,8 +152,12 @@ print(is_a_right_triangle(1,3,4))
 iterate_this_list = [1, 2, 3, 4 ,5]
 for number in iter(iterate_this_list):
     print(number)
-"""
+    
+lst1 = [2,3,5,6]
 lst = [[x for x in range(3)] for y in range(3)]
 print(lst)
 
 print("a","b","c",sep="sep")
+"""
+foo = (1,2,3)
+foo.index(0)
